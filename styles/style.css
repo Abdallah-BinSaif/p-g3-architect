@@ -37,7 +37,6 @@
     background-color: rgb(255, 144, 14);
     font-size: 1.25rem;
     font-weight: 600;
-    line-height: 1.44rem;
     color: #ffffff;
     padding: 20px 25px;
     border: none;
@@ -106,6 +105,48 @@
     color: rgb(255, 144, 14);
 }
 
+
+.feature-info{
+    max-width: 580px;
+}
+.feature-container{
+    gap: 140px;
+}
+#feature-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding: 20px;
+    max-width: 580px;
+}
+.feature-item{
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+    /* max-width: 580px; */
+}
+.feature-item .reature-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(19, 19, 19);
+    margin: 5px 0;
+}
+.feature-image img{
+    max-width: 100%;
+    height: 980px;
+}
+#boss{
+    font-size: 65px;
+    font-weight: 700;
+    color: white;
+
+}
+#btn-boss{
+    margin-left: -100px;
+    margin-top: -100px;
+    padding: 40px 45px;
+}
+
 /* fact section styles */
 
 .fact-cards-container{
@@ -161,15 +202,25 @@
     height: 100px;
 }
 
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .team{
+    .navbar, .nav-links, .team, .feature-container{
         flex-direction: column;
     }
     .team-image-container, .fact-cards-container, .sponsores-logo {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         gap: 24px;
+    }
+    .feature-image{
+        text-align: center;
+    }
+    #btn-boss{
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 40px 45px;
     }
     .fact-info, .section-info{
         margin-bottom: 20px;
@@ -178,12 +229,24 @@
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* medium screen style  */
 @media screen and (min-width:576px) and (max-width: 992px) {
-    .team{
+    .team, .feature-container{
         flex-direction: column;
+        gap: 24px;
     }
     .team-image-container, .fact-cards-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+    .feature-info{
+        max-width: 100%;
+    }
+    .feature-image{
+        text-align: center;
+    }
+    #btn-boss{
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 40px 45px;
     }
     .fact-info, .section-info{
         margin-bottom: 30px;
